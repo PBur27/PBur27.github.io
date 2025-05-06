@@ -1,0 +1,13 @@
+#map {
+  margin: 0 auto;
+}
+
+#mapContainer {
+  max-width: 90%;
+  max-height: 70%;
+  margin: auto;
+  margin-top: 10px;
+}
+#sosImageContainer{
+  max-width: 50%;
+}

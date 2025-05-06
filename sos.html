@@ -23,8 +23,13 @@
 
     <script>
         function triggerVibration() {
-            navigator.vibrate([200, 100, 200, 100, 200, 100, 400, 100, 400, 100, 400, 100, 200, 100, 200, 100, 200]);
-            console.log("SOS Vibration Triggered!");
+
+            if ('vibrate' in navigator) {
+                navigator.vibrate([200, 100, 200, 100, 200, 100, 400, 100, 400, 100, 400, 100, 200, 100, 200, 100, 200]);
+                console.log("SOS Vibration Triggered!");
+            } else {
+                alert('Vibration API is not supported on this device.');
+            }
         }
     </script>
 </body>
